@@ -1140,3 +1140,388 @@ section {
         margin: 0 0 10px 0;
     }
 }
+
+/* Nav Subtitle & CTA Enhancements */
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-logo .logo-link {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #2d3748;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.nav-logo .nav-subtitle {
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    color: #3182ce !important;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    line-height: 1;
+    margin-top: 2px;
+    white-space: nowrap;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+}
+
+.nav-cta {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    margin: 0;
+    border-radius: 50px;
+}
+
+@media (max-width: 1120px) {
+    .nav-actions {
+        display: none;
+    }
+}
+
+/* Hero Eyebrow & Metrics Grid */
+.hero-eyebrow {
+    display: inline-block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #90cdf4;
+    background: rgba(144, 205, 244, 0.12);
+    border: 1px solid rgba(144, 205, 244, 0.3);
+    padding: 0.35rem 1rem;
+    border-radius: 30px;
+    margin-bottom: 1.25rem;
+}
+
+.hero-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-top: 3.5rem;
+    text-align: left;
+}
+
+.metric-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 1.4rem 1.25rem;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.metric-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(144, 205, 244, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.metric-value {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #90cdf4;
+    letter-spacing: -0.3px;
+    margin-bottom: 0.6rem;
+    line-height: 1.25;
+}
+
+.metric-desc {
+    font-size: 0.86rem;
+    color: #e2e8f0;
+    line-height: 1.55;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .hero-metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .hero-metrics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Capabilities List & Summary */
+.capability-summary {
+    font-size: 0.92rem;
+    color: #4a5568;
+    margin-bottom: 1.1rem;
+    line-height: 1.55;
+}
+
+.capability-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #edf2f7;
+    padding-top: 0.9rem;
+}
+
+.capability-list li {
+    font-size: 0.88rem;
+    color: #4a5568;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    line-height: 1.5;
+}
+
+.capability-list li i {
+    color: #3182ce;
+    font-size: 0.75rem;
+    margin-top: 0.35rem;
+    flex-shrink: 0;
+}
+
+/* Case Studies Grid */
+.case-studies {
+    background: #ffffff;
+}
+
+.case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 960px) {
+    .case-studies-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.case-study-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 2.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.case-study-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(49, 130, 206, 0.12);
+    border-color: #cbd5e0;
+}
+
+.case-study-header {
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 1rem;
+}
+
+.case-study-client {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #3182ce;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.3rem;
+}
+
+.case-study-title {
+    font-size: 1.25rem;
+    color: #1a202c;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.case-block.problem {
+    border-left-color: #e53e3e;
+}
+
+.case-block.problem .case-label {
+    color: #c53030;
+}
+
+.case-block.approach {
+    border-left-color: #3182ce;
+}
+
+.case-block.approach .case-label {
+    color: #2b6cb0;
+}
+
+.case-block.outcome {
+    border-left-color: #38a169;
+    background: #f0fff4;
+}
+
+.case-block.outcome .case-label {
+    color: #276749;
+}
+
+.case-block.tech {
+    border-left-color: #805ad5;
+}
+
+.case-block.tech .case-label {
+    color: #6b46c1;
+}
+
+.tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 0.4rem;
+}
+
+.tech-pill {
+    background: #edf2f7;
+    color: #4a5568;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Engagement Models Section */
+.engagement {
+    background: #f7fafc;
+}
+
+.engagement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.engagement-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.engagement-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(49, 130, 206, 0.1);
+    border-color: #cbd5e0;
+}
+
+.engagement-num {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #ebf8ff;
+    color: #3182ce;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+.engagement-card h3 {
+    font-size: 1.15rem;
+    color: #1a202c;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+}
+
+.engagement-card p {
+    font-size: 0.92rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.engagement-cta {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Education Credentials */
+.education-section {
+    margin-top: 3.5rem;
+    border-top: 1px solid #edf2f7;
+    padding-top: 3rem;
+}
+
+.education-heading {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #1a202c;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.edu-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+}
+
+.edu-icon {
+    width: 44px;
+    height: 44px;
+    background: #ebf8ff;
+    color: #3182ce;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.edu-info h4 {
+    font-size: 1.05rem;
+    color: #1a202c;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.edu-info p {
+    font-size: 0.88rem;
+    color: #718096;
+    margin: 0;
+}

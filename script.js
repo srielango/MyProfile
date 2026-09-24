@@ -142,7 +142,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const animateElements = document.querySelectorAll(
-        '.service-card, .skill-category, .timeline-item, .cert-card, .recommendation-card, .contact-item'
+        '.service-card, .skill-category, .timeline-item, .cert-card, .recommendation-card, .contact-item, .case-study-card, .engagement-card, .metric-card, .edu-card'
     );
     
     animateElements.forEach(el => {
